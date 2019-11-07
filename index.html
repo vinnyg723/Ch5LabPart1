@@ -25,9 +25,8 @@
             $("numberClick").onclick = printNumbers;
         }
 
-        //Print Numbers on Screen Function
+        //Print Numbers on Screen Function-
         var printNumbers = function () {
-
             for (i = 1; i <= 100; i++) {
                 if (i % 3 === 0 && i % 5 === 0) {
                     $("numberHere").innerHTML += "Fizz Buzz" + "<br>";
@@ -35,9 +34,10 @@
                     $("numberHere").innerHTML += "Fizz" + "<br>";
                 } else if (i % 5 === 0) {
                     $("numberHere").innerHTML += "Buzz" + "<br>";
-                }
+                } 
                 else {
-                    $("numberHere").innerHTML += i + "<br>";
+                    var hexString = i.toString(16);
+                    $("numberHere").innerHTML += hexString + "<br>";
                 }
             }
 
