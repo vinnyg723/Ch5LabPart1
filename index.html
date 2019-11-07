@@ -36,10 +36,9 @@
                 } else if (i % 5 === 0) {
                     $("numberHere").innerHTML += "Buzz" + "<br>";
                 } 
-                else if (i % 7 === 0) {
-                    $("numberHere").innerHTML += "Fuzz" + "<br>";
-                }else {
-                    $("numberHere").innerHTML += i + "<br>";
+                else {
+                    var hexString = i.toString(16);
+                    $("numberHere").innerHTML += hexString + "<br>";
                 }
             }
 
