@@ -35,13 +35,15 @@
                     $("numberHere").innerHTML += "Fizz" + "<br>";
                 } else if (i % 5 === 0) {
                     $("numberHere").innerHTML += "Buzz" + "<br>";
-                } else {
+                } 
+                else if (i % 7 === 0) {
+                    $("numberHere").innerHTML += "Fuzz" + "<br>";
+                }else {
                     $("numberHere").innerHTML += i + "<br>";
                 }
             }
 
         };
-        //workho
     </script>
 </body>
 
