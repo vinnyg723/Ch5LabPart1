@@ -29,10 +29,11 @@
         var printNumbers = function () {
 
             for (i = 1; i <= 100; i++) {
-                if (i % 3 === 0) {
+                if (i % 3 === 0 && i % 5 === 0) {
+                    $("numberHere").innerHTML += "Fizz Buzz" + "<br>";
+                }else if (i % 3 === 0) {
                     $("numberHere").innerHTML += "Fizz" + "<br>";
-                }
-                if (i % 5 === 0) {
+                } else if (i % 5 === 0) {
                     $("numberHere").innerHTML += "Buzz" + "<br>";
                 } else {
                     $("numberHere").innerHTML += i + "<br>";
